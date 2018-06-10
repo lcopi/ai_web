@@ -8,6 +8,10 @@ targets:
   ai_web:
     main: src/ai_web.cr
 
+dependencies:
+  raze:
+    github: samueleaton/raze
+
 crystal: 0.24.2
 
 license: MIT
