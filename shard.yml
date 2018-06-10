@@ -1,0 +1,13 @@
+name: ai_web
+version: 0.1.0
+
+authors:
+  -  <>
+
+targets:
+  ai_web:
+    main: src/ai_web.cr
+
+crystal: 0.24.2
+
+license: MIT
