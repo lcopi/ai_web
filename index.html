@@ -3,16 +3,44 @@
 <head>
     <meta charset="utf8"/>
     <title>ai_web</title>
+    <base href="./" target="_blank">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <link rel="stylesheet" href="static/styles/default.css"/>
+    <link rel="stylesheet" href="static/styles/index.css"/>
 </head>
 <body>
+    <div class="ai_web-top-bar-wrapper">
+        <div class="ai_web-top-bar-sh-wrapper">
+            <div class="ai_web-top-bar-symbol material-icons" ai_web-std-tooltip="Menu">menu</div>
+            <div class="ai_web-top-bar-header">AI Consultation</div>
+        </div>
+        <div class="ai_web-top-bar-link-wrapper">
+            <div class="ai_web-top-bar-link">About</div>
+            <div class="ai_web-top-bar-link">Services</div>
+            <div class="ai_web-top-bar-link">Demos</div>
+            <div class="ai_web-top-bar-link">Contact</div>
+            <div class="ai_web-top-bar-link filled">Request a quote</div>
+        </div>
+    </div>
+    <div class="section" style="background-image:url(static/images/neural-net-stock.jpeg);">
+        <div class="ai_web-text-card" style="width:500px">
+            <h3>About</h3>
+            <h1>Lorem ipsum dolor sit amet</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed accumsan nunc, et suscipit diam. Vivamus ultrices egestas ligula vel commodo. Sed porta massa quis nibh varius dapibus. 
+        </div>
+        <div class="ai_web-text-card" style="right:25px;bottom:-100px;width:450px;">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed accumsan nunc, et suscipit diam. Vivamus ultrices egestas ligula vel commodo. Sed porta massa quis nibh varius dapibus. 
+        </div>
+    </div>
     <!-- special text input example -->
-    <div style="width:400px;margin:30px">
+    <!--<div style="width:400px;margin:100px 30px">
         <div class="ai_web-std-io-text-wrapper">
             <div class="ai_web-std-io-text-label">Username</div>
             <input class="ai_web-std-io-text-input" type="text" id="uname-io"/>
         </div>
-    </div>
+    </div>-->
 
     <script src="https://cdn.jsdelivr.net/gh/jcopi/selector@v2.0.1/lib-verbose.min.js"></script>
     <script src="static/scripts/default.js"></script>

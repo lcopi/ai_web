@@ -1,1 +1,164 @@
-.ai_web-
+.ai_web-top-bar-wrapper {
+    height:72px;
+    width:100%;
+    display:block;
+    box-sizing:border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:100;
+    padding:18px;
+    overflow:hidden;
+    background:linear-gradient(to bottom, rgba(255,255,255, 1) 0%, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0.75) 75%, rgba(255,255,255, 0.25) 100%);
+}
+
+.ai_web-top-bar-sh-wrapper {
+    background:var(--default-gradient);
+    -webkit-background-clip:text;
+    background-clip:text;
+    display:inline-block;
+}
+
+.ai_web-top-bar-symbol {
+    height:36px;
+    width:36px;
+    display:inline-block;
+    box-sizing:border-box;
+    position:relative;
+    padding:6px;
+    font:normal 24px/24px "Material Icons";
+    color:rgba(255,255,255, 0);
+    cursor:pointer;
+    vertical-align:top;
+    border-radius:50%;
+    z-index:1;
+    transition:color 0.4s ease;
+}
+.ai_web-top-bar-symbol::before {
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:block;
+    top:0;
+    left:0;
+    border-radius:50%;
+    z-index:-1;
+    background-image:var(--default-gradient);
+    transform:scale(0,0);
+    filter:blur(2px), opacity(0);
+    transition:transform 0.3s ease-in, filter 0.25s ease-out;
+}
+.ai_web-top-bar-symbol:hover::before {
+    transform:scale(1,1);
+    filter:blur(0px), opacity(1);
+    transition:transform 0.3s ease-out, filter 0.25s ease-in;
+}
+.ai_web-top-bar-symbol:hover {
+    color:rgba(255,255,255, 1);
+}
+
+.ai_web-top-bar-header {
+    height:36px;
+    width:auto;
+    display:inline-block;
+    box-sizing:border-box;
+    padding:0 12px;
+    font:300 24px/36px "Roboto", sans-serif;
+    color:transparent;
+    vertical-align:top;
+    text-transform:uppercase;
+}
+
+.ai_web-top-bar-link {
+    height:36px;
+    width:auto;
+    display:inline-block;
+    box-sizing:border-box;
+    padding:6px 18px;
+    margin:0;
+    font:normal 14px/24px "Roboto", sans-serif;
+    text-transform:uppercase;
+    transition:background-position 0.4s ease-in;
+    color:transparent;
+    background-color:rgba(0,0,0, 0.5);
+    background-image:var(--default-gradient-transp);
+    background-size:200% 200%;
+    background-position:0% 0%;
+    -webkit-background-clip:text;
+    background-clip:text;
+    vertical-align:top;
+    cursor:pointer;
+}
+.ai_web-top-bar-link.filled {
+    font-weight:bold;
+}
+
+.ai_web-top-bar-link:hover,
+.ai_web-top-bar-link.selected {
+    background-position:100% 0%;
+}
+
+.ai_web-top-bar-link-wrapper {
+    display:inline-block;
+    padding-right:inherit;
+    position:absolute;
+    right:0;
+    text-align:right;
+    font-size:0;
+}
+
+body {
+    padding:72px 0 0 0;
+    box-sizing:border-box;
+    width:100%; margin:0;
+}
+html {
+    margin:0; padding:0;
+}
+
+.section {
+    height:500px;
+    width:100%;
+    display:block;
+    box-sizing:border-box;
+    padding:25px;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.ai_web-text-card {
+    height:auto;
+    display:block;
+    padding:50px;
+    background-color:#FFFFFF;
+    border-radius:1px;
+    box-shadow:2px 8px 12px rgba(0,0,0, 0.4);
+    font:normal 18px/31px "Roboto", sans-serif;
+    position:absolute;
+}
+.ai_web-text-card-noshadow {
+    box-shadow:none;
+}
+.ai_web-text-card h1 {
+    margin:0 0 10px 0; padding:0;
+    font:300 45px/55px "Roboto", sans-serif;
+}
+
+.ai_web-text-card h2 {
+    margin:0 0 10px 0; padding:0;
+    font:bold 22px/40px "Roboto", sans-serif;
+    background:var(--default-gradient-45);
+    background-clip:text;
+    color:transparent;
+}
+.ai_web-text-card h3 {
+    margin:0 0 10px 0; padding:0;
+    font:bold 13px/31px "Roboto", sans-serif;
+    /*background:var(--default-gradient-45);
+    background-clip:text;
+    color:transparent;*/
+    color:rgba(0,0,0, 0.5);
+    text-transform:uppercase;
+}
